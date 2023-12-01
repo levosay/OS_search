@@ -3,12 +3,14 @@ import { IHookFormValues } from '../types/form'
 import { prepData } from '../helpers'
 import { StepsValue } from '../store/steps/stepsSlice.ts'
 
+const initState = {
+  windows: 0,
+  linux: 0,
+  macos: 0,
+}
+
 export const useProgress = () => {
-  const [data, setData] = useState<StepsValue>({
-    windows: 0,
-    linux: 0,
-    macos: 0,
-  })
+  const [data, setData] = useState<StepsValue>(initState)
   const [progress, setProgress] = useState(false)
 
   const updateProgress = (data: IHookFormValues): boolean => {
@@ -40,9 +42,14 @@ export const useProgress = () => {
     }
   }
 
+  const clearData = () => {
+    setProgress(false)
+  }
+
   return {
     data,
     progress,
     updateProgress,
+    clearData,
   }
 }

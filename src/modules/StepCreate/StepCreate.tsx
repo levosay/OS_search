@@ -15,7 +15,7 @@ export const StepCreate: FunctionComponent<QuizData> = ({
   nextStep,
   ...props
 }): JSX.Element | null => {
-  const { data, progress, updateProgress } = useProgress()
+  const { data, progress, updateProgress, clearData } = useProgress()
   const { step } = useAppSelector(stepStore)
   const dispatch = useAppDispatch()
 
@@ -31,6 +31,7 @@ export const StepCreate: FunctionComponent<QuizData> = ({
     }
 
     dispatch(setStep(nextStep))
+    clearData()
   }
 
   return (
