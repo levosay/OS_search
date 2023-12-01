@@ -2,7 +2,7 @@ import type { PayloadAction } from '@reduxjs/toolkit'
 import { createSlice } from '@reduxjs/toolkit'
 import { IHookFormProps } from '../../types/form'
 
-export type Steps = 0 | 1 | 2 | 3 | 4
+export type Steps = 0 | 1 | 2 | 3 | 4 | 5
 export type OSTypes = 'windows' | 'linux' | 'macos'
 export type StepsValue = Record<OSTypes, number>
 

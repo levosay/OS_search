@@ -38,7 +38,7 @@ export const quizData: QuizData[] = [
           osValues: {
             windows: 10,
             linux: 0,
-            macos: 2,
+            macos: 3,
           },
         },
         {
@@ -46,9 +46,9 @@ export const quizData: QuizData[] = [
           inputFormName: 'check_learn',
           value: 0,
           osValues: {
-            windows: 10,
+            windows: 1,
             linux: 1,
-            macos: 5,
+            macos: 1,
           },
         },
         {
@@ -56,9 +56,9 @@ export const quizData: QuizData[] = [
           inputFormName: 'check_work',
           value: 0,
           osValues: {
-            windows: 5,
-            linux: 10,
-            macos: 10,
+            windows: 1,
+            linux: 1,
+            macos: 1,
           },
         },
       ],
@@ -78,9 +78,9 @@ export const quizData: QuizData[] = [
           inputFormName: 'check_photoshop',
           value: 0,
           osValues: {
-            windows: 0,
+            windows: 3,
             linux: 0,
-            macos: 0,
+            macos: 2,
           },
         },
         {
@@ -88,9 +88,9 @@ export const quizData: QuizData[] = [
           inputFormName: 'check_vegas',
           value: 0,
           osValues: {
-            windows: 0,
+            windows: 2,
             linux: 0,
-            macos: 0,
+            macos: 1,
           },
         },
         {
@@ -98,19 +98,9 @@ export const quizData: QuizData[] = [
           inputFormName: 'check_blender',
           value: 0,
           osValues: {
-            windows: 0,
+            windows: 2,
             linux: 0,
-            macos: 0,
-          },
-        },
-        {
-          labelMessage: 'EDIUS',
-          inputFormName: 'check_EDIUS',
-          value: 0,
-          osValues: {
-            windows: 0,
-            linux: 0,
-            macos: 0,
+            macos: 2,
           },
         },
         {
@@ -118,7 +108,7 @@ export const quizData: QuizData[] = [
           inputFormName: 'check_CorelDRAW',
           value: 0,
           osValues: {
-            windows: 0,
+            windows: 4,
             linux: 0,
             macos: 0,
           },
@@ -136,4 +126,141 @@ export const quizData: QuizData[] = [
       ],
     },
   },
+  {
+    title: 'Ваша профессия?',
+    buttonText: 'Далее',
+    currentStep: 3,
+    nextStep: 4,
+    descriptions: 'Выберете сверу своей деятельности',
+    questions: {
+      type: 'profession',
+      value: [
+        {
+          labelMessage: 'Разработчик',
+          inputFormName: 'check_developer',
+          value: 0,
+          osValues: {
+            windows: 1,
+            linux: 4,
+            macos: 4,
+          },
+        },
+        {
+          labelMessage: 'Дизайнер',
+          inputFormName: 'check_designer',
+          value: 0,
+          osValues: {
+            windows: 2,
+            linux: 0,
+            macos: 4,
+          },
+        },
+        {
+          labelMessage: 'Бухгалтер',
+          inputFormName: 'check_accountant',
+          value: 0,
+          osValues: {
+            windows: 4,
+            linux: 0,
+            macos: 1,
+          },
+        },
+        {
+          labelMessage: 'Менеджер',
+          inputFormName: 'check_manager',
+          value: 0,
+          osValues: {
+            windows: 2,
+            linux: 0,
+            macos: 2,
+          },
+        },
+        {
+          labelMessage: 'Другая...',
+          inputFormName: 'check_proOther',
+          value: 0,
+          osValues: {
+            windows: 3,
+            linux: 0,
+            macos: 0,
+          },
+        },
+      ],
+    },
+  },
+  {
+    title: 'Дополнительные вопросы',
+    buttonText: 'Далее',
+    currentStep: 4,
+    nextStep: 5,
+    descriptions: 'Выберете опции, которые Вам будут полезны',
+    questions: {
+      type: 'options',
+      value: [
+        {
+          labelMessage: 'Работа через командную строку',
+          inputFormName: 'check_cmd',
+          value: 0,
+          osValues: {
+            windows: 1,
+            linux: 5,
+            macos: 4,
+          },
+        },
+        {
+          labelMessage: 'Общая экосистема',
+          inputFormName: 'check_eco',
+          value: 0,
+          osValues: {
+            windows: 0,
+            linux: 0,
+            macos: 5,
+          },
+        },
+        {
+          labelMessage: 'Универсальность',
+          inputFormName: 'check_versatility',
+          value: 0,
+          osValues: {
+            windows: 4,
+            linux: 1,
+            macos: 1,
+          },
+        },
+        {
+          labelMessage: 'Порог входа',
+          inputFormName: 'check_entry',
+          value: 0,
+          osValues: {
+            windows: 4,
+            linux: 0,
+            macos: 1,
+          },
+        },
+        {
+          labelMessage: 'Доступность',
+          inputFormName: 'check_availability',
+          value: 0,
+          osValues: {
+            windows: 3,
+            linux: 2,
+            macos: 0,
+          },
+        },
+        {
+          labelMessage: 'Повышенная безопасность',
+          inputFormName: 'check_safety',
+          value: 0,
+          osValues: {
+            windows: 0,
+            linux: 5,
+            macos: 5,
+          },
+        },
+      ],
+    },
+  },
 ]
+
+
+
