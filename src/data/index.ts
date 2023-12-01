@@ -114,13 +114,33 @@ export const quizData: QuizData[] = [
           },
         },
         {
+          labelMessage: 'Docker',
+          inputFormName: 'check_docker',
+          value: 0,
+          osValues: {
+            windows: 1,
+            linux: 5,
+            macos: 4,
+          },
+        },
+        {
+          labelMessage: 'Microsoft Office',
+          inputFormName: 'check_office',
+          value: 0,
+          osValues: {
+            windows: 3,
+            linux: 1,
+            macos: 3,
+          },
+        },
+        {
           labelMessage: 'Другие...',
           inputFormName: 'check_other',
           value: 0,
           osValues: {
-            windows: 0,
+            windows: 1,
             linux: 0,
-            macos: 0,
+            macos: 1,
           },
         },
       ],
@@ -162,7 +182,7 @@ export const quizData: QuizData[] = [
           osValues: {
             windows: 4,
             linux: 0,
-            macos: 1,
+            macos: 0,
           },
         },
         {
@@ -242,8 +262,8 @@ export const quizData: QuizData[] = [
           inputFormName: 'check_availability',
           value: 0,
           osValues: {
-            windows: 3,
-            linux: 2,
+            windows: 1,
+            linux: 5,
             macos: 0,
           },
         },
